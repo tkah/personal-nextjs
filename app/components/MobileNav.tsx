@@ -23,7 +23,7 @@ const styles: { [p: string]: React.CSSProperties } = {
         width: '100%',
     },
     navHeader: {
-        position: 'relative',
+        position: 'fixed',
     },
     navExpanded: {
         height: '100%',

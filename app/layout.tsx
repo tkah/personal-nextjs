@@ -63,7 +63,7 @@ export default function RootLayout({
           <MobileNav />
           <div style={styles.contentContainer}>
             <DesktopNav />
-            <div style={styles.content}>
+            <div id="site-content" style={styles.content}>
               {children}
             </div>
           </div>
