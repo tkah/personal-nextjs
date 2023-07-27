@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { ReactElement } from "react";
 
-const styles ={
+const styles: { [p: string]: React.CSSProperties } = {
     cardContainer: {
         display: 'flex',
         flexDirection: 'column',

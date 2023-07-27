@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react'
 import PageLogoTitle from '../components/PageLogoTitle'
 
-const styles = {
+const styles: { [p: string]: React.CSSProperties } = {
   listContainer: {
     display: 'flex',
     flexWrap: 'wrap',

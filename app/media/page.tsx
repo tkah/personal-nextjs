@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 import PageLogoTitle from "../components/PageLogoTitle";
 import Card from "../components/Card";
 
-const styles = {
+const styles: { [p: string]: React.CSSProperties } = {
   cardContainer: {
     margin: '1rem 0',
   }

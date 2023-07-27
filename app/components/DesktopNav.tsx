@@ -4,7 +4,7 @@ import DarkModeToggle from './DarkModeToggle'
 import SocialSVGLink from './SocialSVGLink'
 import NavItems from './NavItems'
 
-const styles = {
+const styles: { [p: string]: React.CSSProperties } = {
     desktopNav: {
         flex: 1,
         flexDirection: 'column',

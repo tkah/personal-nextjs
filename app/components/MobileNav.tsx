@@ -7,7 +7,7 @@ import SocialSVGLink from "./SocialSVGLink"
 import NavItems from "./NavItems"
 import DarkModeToggle from "./DarkModeToggle"
 
-const styles ={
+const styles: { [p: string]: React.CSSProperties } = {
     burger: {
         backgroundColor: 'rbg(var(--foreground-rgb))'
     },

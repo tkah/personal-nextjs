@@ -1,6 +1,6 @@
 import ImageSvg from "./ImageSvg"
 
-const styles ={
+const styles: { [p: string]: React.CSSProperties } = {
     container: {
         marginBottom: '1rem',
         display: 'flex',

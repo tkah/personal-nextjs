@@ -19,7 +19,7 @@ export const metadata = {
   description: 'Shameless self-promotion for Torran Kahleck.',
 }
 
-const styles = {
+const styles: { [p: string]: React.CSSProperties } = {
   body: {
     display: 'flex',
     flex: 11,

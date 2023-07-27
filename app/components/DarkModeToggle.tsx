@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react"
 import { useMatchColorScheme } from "./hooks"
 
-const styles = {
+const styles: { [p: string]: React.CSSProperties } = {
     toggleContainer: {
         textAlign: 'center',
         marginTop: '1rem',
