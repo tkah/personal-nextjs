@@ -2,7 +2,6 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Dispatch, SetStateAction } from "react"
 
 export default function NavListItem (
     {isDarkMode, description, label}:
@@ -11,19 +10,19 @@ export default function NavListItem (
     const pathname = usePathname()
 
     return (
-        <Link href={label.replace('_', '')}>
-            <li
-                className={`
-                    font-source-pro
-                    nav-button
-                    togglable-color
-                    ${isDarkMode ? 'nav-button-dark' : 'nav-button-light'}
-                    ${pathname.includes(label.replace('_', '')) ? 'nav-button-selected' : ''}
-                `}
-            >
+        <li
+            className={`
+                font-source-pro
+                nav-button
+                togglable-color
+                ${isDarkMode ? 'nav-button-dark' : 'nav-button-light'}
+                ${pathname.includes(label.replace('_', '')) ? 'nav-button-selected' : ''}
+            `}
+        >
+            <Link href={label.replace('_', '')} style={{ height: '100%', width: '100%' }}>
                 <span className="nav-item-description">{description}</span>
                 <span className="nav-item-content">{label}</span>
-            </li>
-        </Link>
+            </Link>
+        </li>
     )
 }
