@@ -26,7 +26,7 @@ export default function Page(): ReactNode {
           subtitle="NextJS :: React"
           description={<>This site you&apos;re on now! I know it doesn&apos;t do much at the moment, but it is
             my first experience with NextJS (v13) and I hope to expand it soon with some fun experiments.</>}
-          url=""
+          url="https://github.com/tkah/personal-nextjs"
           displayBackground={false}
         />
         <Card
