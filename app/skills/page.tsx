@@ -43,6 +43,7 @@ export default function Page(): ReactNode {
               <li>NodeJS</li>
               <li>React/Redux</li>
               <li>JQuery</li>
+              <li>Express</li>
               <li>Electron</li>
               <li>D3</li>
               <li>NextJS</li>
