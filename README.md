@@ -1,4 +1,4 @@
-This is my personal website as of July 2023 made using React & NextJS (v13). No component libraries are used. The site is hosted on DigitalOcean and uses Github Ations for CD on push.
+This is my personal website as of July 2023 made using React & NextJS (v13). No component libraries are used. The site is hosted on DigitalOcean and uses Github Actions for CD on push.
 
 [https://torrankahleck.com](https://torrankahleck.com/about)
 

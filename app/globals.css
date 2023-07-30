@@ -204,11 +204,12 @@ ul ul {
 }
 
 #mobile-nav {
-  background-color: rgba(var(--background-light-rgb));
+  background-color: rgb(var(--background-light-rgb));
   box-shadow: var(--box-shadow-focus);
   position: sticky;
   top: 0;
   width: 100%;
+  z-index: 100;
 }
 
 #mobile-nav nav {

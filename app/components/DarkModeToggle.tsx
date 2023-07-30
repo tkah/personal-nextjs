@@ -32,7 +32,7 @@ export default function DarkModeToggle({ source }: { source: string }) {
 
     return (
         <div style={styles.toggleContainer}>
-            <label className="switch">
+            <label className="switch" htmlFor={`${source}-dark-mode-toggle`}>
                 <input
                     type="checkbox"
                     checked={isDarkToggled}

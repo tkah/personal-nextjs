@@ -73,6 +73,7 @@ export default function MobileNav() {
                     className={`hamburger hamburger--elastic ${isExpanded ? 'is-active' : ''}`}
                     type="button"
                     onClick={() => doExpand(!isExpanded)}
+                    aria-label="expand mobile navigation"
                 >
                     <span className="hamburger-box">
                         <span className="hamburger-inner"></span>
