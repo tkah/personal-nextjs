@@ -17,7 +17,7 @@ export default function Page(): ReactNode {
         size={70}
       />
       <p className="page-content text-content font-titillium-web">
-        My work these days as an employee of a national lab is less likely to be featured in any media accounts.
+        My work these days is less likely to be featured in any media accounts.
         However, mostly while pursuing my master&apos;s, a couple of my projects were reported on in the local news or elsewhere.
         I&apos;ve gathered a few of those here.
       </p>
@@ -71,8 +71,8 @@ export default function Page(): ReactNode {
           title="Be Your Own Guide"
           subtitle="UNM Newsroom - 9/25/14"
           description={<>An article from the University of New Mexico&apos;s
-            Newsroom on my, since removed, <em>iOS application</em>, UNM
-            Pocket Archivist. They misspell my last name and have a few other typos, but I assure you it&apos;s me.</>}
+            Newsroom on my, since removed, iOS application <em>UNM
+            Pocket Archivist</em>.</>}
           url="http://news.unm.edu/news/be-your-own-guide"
           img="http://webcore.unm.edu/v2/images/unm-logo.png"
         />

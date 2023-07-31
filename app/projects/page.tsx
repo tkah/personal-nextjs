@@ -25,7 +25,10 @@ export default function Page(): ReactNode {
           title="Torran Kahleck"
           subtitle="NextJS :: React"
           description={<>This site you&apos;re on now! I know it doesn&apos;t do much at the moment, but it is
-            my first experience with NextJS (v13) and I hope to expand it soon with some fun experiments.</>}
+            my first experience with NextJS (v13) and I hope to expand it soon with some fun experiments. It is
+            configured for Continuous Delivery (CD) using Github Actions such that updates automatically deploy to
+            my DigitalOcean droplet on push. The server is configured with pm2 to then restart on when the project&apos;s
+            directory contents change.</>}
           url="https://github.com/tkah/personal-nextjs"
           displayBackground={false}
         />
@@ -45,11 +48,11 @@ export default function Page(): ReactNode {
         <Card
           title="UNM Library Computer Finder"
           subtitle="JQuery :: PHP :: MSSQL (COTS DB)"
-          description={<>This was a fun proect I worked on while at the University of New Mexico library. It displays live computer
-            availabilities by type across different libraries on campus. Expanding the rows and clicking
+          description={<>This was a fun project I worked on while at the University of New Mexico library. It displays live computer
+            availabilities by OS across different libraries on campus. Expanding the rows and clicking
             into the floors listed will display an SVG map of the computer lab with each individual machine
-            highlighted according to status. The data used to determine machine status is actually stored in a COTS
-            MSSQL database used by the authentication solution they use on the machines. This is queried periodically
+            highlighted according to its availability. The data used to determine machine status is actually stored in a
+            MSSQL database used by the COTS authentication solution they use on the machines. This is queried periodically
             and saved locally for use in the app.</>}
           url="https://library.unm.edu/services/technology/computers/finder.php"
           displayBackground={false}
@@ -66,8 +69,7 @@ export default function Page(): ReactNode {
             the campus community when they&apos;re looking for information
             on grades, schedules, assignments and other information related to life at
             the university. It receives over 1,000,000 page views a month when school
-            is in session and is likely the most broadly impactful application I&apos;ve worked
-            on up to this point in my career. Bringing the portal in-house saved UNM Central IT
+            is in session. Bringing the portal in-house saved UNM Central IT
             over $30,000 a year.</>}
           url="https://my.unm.edu/home"
           displayBackground={false}

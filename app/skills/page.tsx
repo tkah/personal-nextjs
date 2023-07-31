@@ -7,7 +7,7 @@ const styles: { [p: string]: React.CSSProperties } = {
     flexWrap: 'wrap',
     margin: '0 2rem',
     justifyContent: 'space-around',
-    columnGap: '4rem',
+    columnGap: '4.2rem',
     width: '100%',
   },
   listHeader: {
