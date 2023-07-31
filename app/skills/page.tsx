@@ -69,6 +69,7 @@ export default function Page(): ReactNode {
               <li>MongoDB</li>
               <li>GraphQL</li>
               <li>Postgres</li>
+              <li>Redis</li>
               <li>RethinkDB</li>
             </ul>
           </li>
