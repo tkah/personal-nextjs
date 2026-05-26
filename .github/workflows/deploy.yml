@@ -1,38 +1,27 @@
-name: Build and Deploy
+name: Deploy Personal Site
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
+
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Main Branch
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-          ref: main
-
-      - name: Use Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: "18.x"
-
-      - name: Install Dependencies
-        run: npm install
-
-      - name: Build Website
-        run: npm run build
-
-      - name: Install SSH Key
+      - name: Install SSH key
         uses: shimataro/ssh-key-action@v2
         with:
           key: ${{ secrets.SSH_KEY }}
-          known_hosts: "unnecessary"
- 
-      - name: Adding Known Hosts
+          known_hosts: unnecessary
+
+      - name: Add droplet to known hosts
         run: ssh-keyscan -H ${{ secrets.HOST }} >> ~/.ssh/known_hosts
 
-      - name: Deploy with rsync
-        run: rsync -avz --delete . ${{ secrets.USERNAME }}@${{ secrets.HOST }}:${{ secrets.TARGET_DIRECTORY }}
+      - name: Deploy via SSH
+        run: |
+          ssh torran@${{ secrets.HOST }} '
+            cd ~/personal-nextjs &&
+            git pull origin main &&
+            docker compose up --build -d &&
+            docker image prune -f
+          '
