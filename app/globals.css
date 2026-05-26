@@ -76,7 +76,7 @@ ul ul {
 }
 
 .font-titillium-web {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: var(--font-titillium-web), sans-serif;
 }
 
 .hamburger-inner, .hamburger.is-active .hamburger-inner,

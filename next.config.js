@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     output: 'standalone',
-    transpilePackages: ['@fontsource/titillium-web', '@fontsource-variable/source-code-pro'],
     images: {
         remotePatterns: [
             {

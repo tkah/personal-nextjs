@@ -1,18 +1,18 @@
-import '@fontsource/titillium-web/200.css';
-import '@fontsource/titillium-web/300.css';
-import '@fontsource/titillium-web/400.css';
-import '@fontsource/titillium-web/600.css';
-import '@fontsource/titillium-web/700.css';
-import '@fontsource/titillium-web/900.css';
 import '@fontsource-variable/source-code-pro'
 import './hamburgers-elastic.css'
 import './globals.css'
-import { Inter, } from 'next/font/google'
+import { Inter, Titillium_Web } from 'next/font/google'
 import MobileNav from './components/MobileNav'
 import DesktopNav from './components/DesktopNav'
 import { ReactNode } from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
+const titilliumWeb = Titillium_Web({
+  subsets: ['latin'],
+  weight: ['200', '300', '400', '600', '700', '900'],
+  variable: '--font-titillium-web',
+  display: 'swap',
+})
 
 export const metadata = {
   title: 'Torran Kahleck',
@@ -57,7 +57,7 @@ export default function RootLayout({
   children: ReactNode,
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={titilliumWeb.variable}>
       <body className={inter.className}>
         <div style={styles.body}>
           <MobileNav />
